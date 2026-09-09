@@ -1,2 +1,4 @@
 # fundamentos-web-taller1
-Yhojan David Collo Ortega
+Nombre: Yhojan David Collo Ortega
+Este repositorio contiene el primer taller de HTML de la asignatura
+Fundamentos de Programacion Web.
