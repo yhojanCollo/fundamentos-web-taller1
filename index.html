@@ -12,8 +12,10 @@
     </header>
 
     <nav>
-        <a href="#sobre-mi">Sobre mi</a>
+        <a href="#sobre-mi">Sobre mí</a>
         <a href="#intereses">Intereses</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#galeria">Galería</a>
         <a href="#multimedia">Multimedia</a>
         <a href="#horario">Horario</a>
         <a href="#contacto">Contacto</a>
@@ -83,7 +85,135 @@
             </video>
 
             <h3>Recurso externo incrustado (Iframe)</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=zP-o2Ssv8cUD6FcB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" title="Reproductor de video externo" frameborder="0" allowfullscreen></iframe>
-        </section>       
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=zP-o2Ssv8cUD6FcB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>     
+        <section id="horario">
+            <h2>Horario Académico</h2>
+            <table>
+                <caption>Distribución de asignaturas del semestre</caption>
+                <thead>
+                    <tr>
+                        <th>Asignatura</th>
+                        <th>Día</th>
+                        <th>Hora</th>
+                        <th>Modalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ingenieria de software</td>
+                        <td>Lunes</td>
+                        <td>10:00 a. m.</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td> Calculo Vectorial</td>
+                        <td>Martes</td>
+                        <td>7:00 a. m.</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Humanidades</td>
+                        <td>Martes</td>
+                        <td>10:00 a. m.</td>
+                        <td>Virtual (cada 15 días)</td>
+                    </tr>
+                    <tr>
+                        <td>Programacion III</td>
+                        <td>Miércoles</td>
+                        <td>7:00 a. m.</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Fundamentos Web</td>
+                        <td>Jueves</td>
+                        <td>7:00 a. m.</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Física</td>
+                        <td>Viernes</td>
+                        <td>7:00 a. m.</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Física Lab</td>
+                        <td>Viernes</td>
+                        <td>10:00 a. m.</td>
+                        <td>Virtual (Cada 15 días)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección 7: Formulario de contacto -->
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Información Académica y de Contacto</legend>
+
+                    <p>
+                        <label for="nombre">Nombre completo:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label><br>
+                        <input type="email" id="correo" name="correo" placeholder="usuario@unicamacho.edu.co" required>
+                    </p>
+
+                    <p>
+                        <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+                        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad:</label><br>
+                        <input type="number" id="edad" na   me="edad" min="15" max="99">
+                    </p>
+
+                    <p>
+                        <label for="nivel_satisfaccion">Nivel de satisfacción con la materia (1 al 10):</label><br>
+                        <input type="range" id="nivel_satisfaccion" name="nivel_satisfaccion" min="1" max="10">
+                    </p>
+
+                    <p>
+                        <label>Jornada académica:</label><br>
+                        <input type="radio" id="diurna" name="jornada" value="diurna">
+                        <label for="diurna">Diurna</label>
+                        <input type="radio" id="nocturna" name="jornada" value="nocturna">
+                        <label for="nocturna">Nocturna</label>
+                    </p>
+
+                    <p>
+                        <label>Áreas de interés recreacional:</label><br>
+                        <input type="checkbox" id="frontend" name="intereses_web" value="frontend">
+                        <label for="frontend">Deporte</label>
+                        <input type="checkbox" id="backend" name="intereses_web" value="backend">
+                        <label for="backend">Danza</label>
+                    </p>
+
+                    <p>
+                        <label for="semestre">Semestre actual:</label><br>
+                        <select id="semestre" name="semestre">
+                            <option value="">Seleccione una opción</option>
+                            <option value="1">Primer semestre</option>
+                            <option value="2">Segundo semestre</option>
+                            <option value="3">Tercer semestre</option>
+                            <option value="4">Cuarto semestre</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentario o mensaje:</label><br>
+                        <textarea id="comentario" name="comentario" rows="5" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </p>
+
+                    <button type="submit">Enviar formulario</button>
+                    <button type="reset">Limpiar campos</button>
+                </fieldset>
+            </form>
+        </section>  
 </body>
 </html>
